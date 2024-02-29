@@ -10,10 +10,6 @@ import { User } from 'src/app/user/user';
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-
   admin!: User | null;
   constructor(private authService: AuthService, private router: Router) {}
 
