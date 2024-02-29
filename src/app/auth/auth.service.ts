@@ -10,6 +10,9 @@ import { BehaviorSubject, throwError, tap, catchError } from 'rxjs';
   providedIn: 'root',
 })
 export class AuthService {
+  checkEmail() {
+    throw new Error('Method not implemented.');
+  }
   jwtHelper = new JwtHelperService();
   APIurl = environment.APIurl;
   private authSubj = new BehaviorSubject<null | AuthData>(null);
