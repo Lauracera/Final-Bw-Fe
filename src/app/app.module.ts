@@ -6,23 +6,20 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/Login/login/login.component';
 import { RegisterComponent } from './auth/Register/register/register.component';
 import { RouterModule, Route } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
-const routes: Route[] = [
-  {
-    path: 'login',
-    component: LoginComponent,
-  },
-];
+const routes: Route[] = [{ path: 'profile', component: ProfileComponent }];
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, RegisterComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    RouterModule.forRoot(routes),
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    RegisterComponent,
+    NavbarComponent,
+    ProfileComponent,
   ],
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent],
 })
