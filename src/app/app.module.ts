@@ -9,8 +9,6 @@ import { RouterModule, Route } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProfileComponent } from './components/profile/profile.component';
 
-const routes: Route[] = [{ path: 'profile', component: ProfileComponent }];
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +17,11 @@ const routes: Route[] = [{ path: 'profile', component: ProfileComponent }];
     NavbarComponent,
     ProfileComponent,
   ],
+<<<<<<< Updated upstream
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(routes)],
+=======
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
+>>>>>>> Stashed changes
   providers: [],
   bootstrap: [AppComponent],
 })
